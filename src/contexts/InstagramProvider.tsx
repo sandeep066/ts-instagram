@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
+import { fetchData } from "../services/api";
 
 export interface Post {
   id: number;
@@ -23,12 +24,21 @@ const InstagramProvider: React.FC<InstagramProviderProps> = ({ children }) => {
   const [posts, setPosts] = useState<Post[]>([]);
 
   const addPost = () => {
-    const newPost: Post = {
-      id: posts.length + 1,
-      imageUrl: "https://source.unsplash.com/1600x1000/?burger",
-      profilePictureUrl: "https://source.unsplash.com/1600x1000/?man",
-    };
-    setPosts((prevPosts) => [...prevPosts, newPost]);
+    try {
+      const timestamp = Date.now();
+
+      const imageUrl = `https://source.unsplash.com/1600x1000/?vegan&${timestamp}`;
+      const profilePictureUrl = `https://source.unsplash.com/300x300/?man&${timestamp}`;
+
+      const newPost: Post = {
+        id: posts.length + 1,
+        imageUrl: imageUrl,
+        profilePictureUrl: profilePictureUrl,
+      };
+      setPosts((prevPosts) => [...prevPosts, newPost]);
+    } catch (error) {
+      console.error("Error while fecthing post details !!!");
+    }
   };
 
   const contextValue = { posts, addPost };

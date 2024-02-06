@@ -2,7 +2,7 @@ import React from "react";
 import { useInstagram } from "../../contexts/InstagramProvider";
 import PostItem from "../../components/post/PostItem";
 
-const Instagram: React.FC = () => {
+const Feed: React.FC = () => {
   const { posts, addPost } = useInstagram();
 
   return (
@@ -15,4 +15,4 @@ const Instagram: React.FC = () => {
   );
 };
 
-export default Instagram;
+export default Feed;
