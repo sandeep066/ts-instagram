@@ -6,10 +6,12 @@ body {
 
 .insta-container {
   display: flex;
+  height: 100vh;
 }
 
 .main-navbar {
   width: 20%;
+  background-color: brown;
   height: 100%;
 }
 
@@ -26,11 +28,13 @@ body {
 .main-stories {
   width: 80%;
   min-height: 100px;
+  background-color: aqua;
 }
 
 .main-profile {
   width: 20%;
   min-height: 100px;
+  background-color: darkblue;
 }
 
 .insta-posts-sidebar {
@@ -40,9 +44,11 @@ body {
 .main-posts {
   width: 80%;
   min-height: calc(100vh - 100px); /* Adjusted height to fill remaining space */
+  background-color: orangered;
 }
 
 .main-sidebar {
   width: 20%;
   min-height: calc(100vh - 100px); /* Adjusted height to fill remaining space */
+  background-color: chartreuse;
 }
