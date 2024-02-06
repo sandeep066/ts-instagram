@@ -1,0 +1,44 @@
+.post-container {
+  width: 700px;
+  margin: 50px auto;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin-bottom: 24px;
+}
+
+.post-profile {
+  display: flex;
+  gap: 7px;
+}
+.post-profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.post-user-names {
+  align-items: center;
+  margin-bottom: 24px;
+}
+.post-name {
+  margin: 0;
+}
+.post-user {
+  margin: 0;
+  color: darkgray;
+  font-size: 14px;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+.feed {
+  border: 1px solid lightgrey;
+  padding: 8px;
+  border-radius: 14px;
+}
+.post-picture {
+  border-radius: 14px;
+  width: 100%;
+}
