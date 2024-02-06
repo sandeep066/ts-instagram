@@ -39,7 +39,7 @@ body {
 
 .main-posts {
   width: 80%;
-  min-height: calc(100vh - 100px); /* Adjusted height to fill remaining space */
+  min-height: calc(100vh - 100px);
 }
 
 .main-sidebar {

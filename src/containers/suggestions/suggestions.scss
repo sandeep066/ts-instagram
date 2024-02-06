@@ -1,5 +1,5 @@
 .main-sidebar {
-  width: 200px;
-  height: calc(100vh - 100px); /* Adjusted height to fill remaining space */
+  width: 20%;
+  min-height: calc(100vh - 100px);
   background-color: chartreuse;
 }

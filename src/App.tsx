@@ -3,7 +3,7 @@ import "./styles/insta-container.scss";
 import "./styles/insta-stories-posts-all.scss";
 import "./styles/insta-stories-profile.scss";
 import "./styles/insta-posts-sidebar.scss";
-import "./styles/global.css";
+import "./styles/global.scss";
 import { InstagramProvider } from "./contexts/InstagramProvider";
 import Instagram from "./containers/feed/Feed";
 import NavBar from "./containers/navbar/NavBar";
