@@ -10,9 +10,9 @@ body {
 }
 
 .main-navbar {
-  width: 200px;
+  width: 20%;
   background-color: brown;
-  height: 100vh;
+  height: 100%;
 }
 
 .insta-stories-posts-all {
@@ -26,14 +26,14 @@ body {
 }
 
 .main-stories {
-  width: 800px;
-  height: 100px;
+  width: 80%;
+  min-height: 100px;
   background-color: aqua;
 }
 
 .main-profile {
-  width: 200px;
-  height: 100px;
+  width: 20%;
+  min-height: 100px;
   background-color: darkblue;
 }
 
@@ -42,13 +42,13 @@ body {
 }
 
 .main-posts {
-  width: 800px;
-  height: calc(100vh - 100px); /* Adjusted height to fill remaining space */
+  width: 80%;
+  min-height: calc(100vh - 100px); /* Adjusted height to fill remaining space */
   background-color: orangered;
 }
 
 .main-sidebar {
-  width: 200px;
-  height: calc(100vh - 100px); /* Adjusted height to fill remaining space */
+  width: 20%;
+  min-height: calc(100vh - 100px); /* Adjusted height to fill remaining space */
   background-color: chartreuse;
 }
