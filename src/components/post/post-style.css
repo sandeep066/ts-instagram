@@ -1,5 +1,7 @@
 .post-container {
   width: 700px;
+  /* max-width: 100%; */
+  /* max-width: calc(100% - 200px); */
   margin: 50px auto;
   /* display: flex;
   align-items: center;

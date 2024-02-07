@@ -1,9 +1,9 @@
 import React from "react";
-import { useInstagram } from "../../contexts/InstagramProvider";
+import { usePosts } from "../../contexts/PostsProvider";
 import PostItem from "../../components/post/PostItem";
 
 const Feed: React.FC = () => {
-  const { posts, addPost } = useInstagram();
+  const { posts, addPost } = usePosts();
 
   return (
     <div>

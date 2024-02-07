@@ -7,20 +7,18 @@ export interface Post {
   profilePictureUrl: string;
 }
 
-interface InstagramContextProps {
+interface PostsContextProps {
   posts: Post[];
   addPost: () => void;
 }
 
-interface InstagramProviderProps {
+interface PostsProviderProps {
   children: React.ReactNode;
 }
 
-const InstagramContext = createContext<InstagramContextProps | undefined>(
-  undefined
-);
+const PostsContext = createContext<PostsContextProps | undefined>(undefined);
 
-const InstagramProvider: React.FC<InstagramProviderProps> = ({ children }) => {
+const PostsProvider: React.FC<PostsProviderProps> = ({ children }) => {
   const [posts, setPosts] = useState<Post[]>([]);
 
   const addPost = () => {
@@ -44,20 +42,20 @@ const InstagramProvider: React.FC<InstagramProviderProps> = ({ children }) => {
   const contextValue = { posts, addPost };
 
   return (
-    <InstagramContext.Provider value={contextValue}>
+    <PostsContext.Provider value={contextValue}>
       {children}
-    </InstagramContext.Provider>
+    </PostsContext.Provider>
   );
 };
 
-const useInstagram = () => {
-  const context = useContext(InstagramContext);
+const usePosts = () => {
+  const context = useContext(PostsContext);
 
   if (!context) {
-    throw new Error("useInstagram must be used within an InstagramProvider");
+    throw new Error("usePosts must be used within an PostsProvider");
   }
 
   return context;
 };
 
-export { InstagramProvider, useInstagram };
+export { PostsProvider, usePosts };

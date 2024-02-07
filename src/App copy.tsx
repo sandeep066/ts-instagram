@@ -1,12 +1,12 @@
 import React from "react";
-import { InstagramProvider } from "./contexts/InstagramProvider";
-import Instagram from "./containers/feed/Feed";
+import { PostsProvider } from "./contexts/PostsProvider";
+import Posts from "./containers/feed/Feed";
 
 const App: React.FC = () => {
   return (
-    <InstagramProvider>
-      <Instagram />
-    </InstagramProvider>
+    <PostsProvider>
+      <Posts />
+    </PostsProvider>
   );
 };
 

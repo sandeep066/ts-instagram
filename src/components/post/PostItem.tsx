@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
-import { Post } from "../../contexts/InstagramProvider";
+import { Post } from "../../contexts/PostsProvider";
 import "./post-style.css";
 import PostFeedIcons from "../../assets/icons/PostFeedIcons";
 
