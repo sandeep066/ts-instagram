@@ -1,0 +1,26 @@
+.navbar-icons-text {
+  display: flex;
+  text-align: center;
+  margin-left: 15px;
+  padding: 10px 80px 10px 10px;
+  width: 120px;
+}
+
+.navbar-icons-text:hover {
+  cursor: pointer;
+  background-color: rgb(241, 236, 236);
+  border-radius: 10px;
+}
+
+.navbar-icons-text:hover .heart-icon {
+  transform: scale(1.1);
+}
+
+.icon-text {
+  margin-left: 12px;
+  margin-top: 3px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
