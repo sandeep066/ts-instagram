@@ -3,7 +3,7 @@ import { HomeIcon } from "../../assets/icons/navbar/HomeIcon";
 import { SearchIcon } from "../../assets/icons/navbar/SearchIcon";
 import { CompassIcon } from "../../assets/icons/navbar/CompassIcon";
 
-import "./navbar-icons.scss";
+import "./styles/navbar-icons.scss";
 
 interface NavBarIconsProps {
   className?: string;
@@ -60,7 +60,7 @@ const NavBarIcons: React.FC<NavBarIconsProps> = ({ className }) => {
       >
         <SearchIcon isSearchClicked={iconState.search} />
         <span className={`icon-text ${iconState.search ? "bold-text" : ""}`}>
-          SearchIcon
+          Search
         </span>
       </span>
       <span
