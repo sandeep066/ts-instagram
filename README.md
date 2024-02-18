@@ -41,8 +41,24 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+<details>
+```
+git reset --hard HEAD and git stash are two different Git commands used for different purposes:
+
+git reset --hard HEAD: This command is used to reset the current branch to the state of the last commit (HEAD). It will discard all changes in your working directory, including staged and unstaged changes. It's a destructive operation and cannot be undone once executed. It's typically used when you want to completely discard all changes and start fresh from the last commit.
+
+git stash: This command is used to temporarily store changes that are not ready to be committed yet. It creates a stash, which is a stack of changes that can be reapplied later. When you run git stash, Git will stash (or save) your changes and revert your working directory to the state of the last commit. You can then continue working on other tasks or switch branches. Later, you can apply the stashed changes back to your working directory using git stash apply or git stash pop. Stashing is typically used when you want to switch to a different task or branch without committing your changes.
+
+In summary:
+
+git reset --hard HEAD is used to permanently discard changes and reset the working directory to the state of the last commit.
+git stash is used to temporarily store changes and revert the working directory to the state of the last commit, allowing you to continue working on other tasks or switch branches without committing the changes.
+
+```
+</details>
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+```
