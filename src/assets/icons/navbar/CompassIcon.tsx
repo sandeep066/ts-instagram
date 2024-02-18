@@ -1,17 +1,19 @@
 import React from "react";
 
 interface CompassIconProps {
-  isHomeClicked: boolean;
+  isCompassClicked: boolean;
 }
 
-export const CompassIcon: React.FC<CompassIconProps> = ({ isHomeClicked }) => {
+export const CompassIcon: React.FC<CompassIconProps> = ({
+  isCompassClicked,
+}) => {
   const handleHome = () => {
     // Additional logic for updating likes count on the backend
   };
 
   return (
     <span className="heart-icon" onClick={handleHome}>
-      {isHomeClicked ? (
+      {isCompassClicked ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"

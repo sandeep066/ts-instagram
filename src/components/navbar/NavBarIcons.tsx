@@ -58,7 +58,7 @@ const NavBarIcons: React.FC<NavBarIconsProps> = ({ className }) => {
         className={`navbar-icons-text ${iconState.search ? "active" : ""}`}
         onClick={() => handleIconClick("search")}
       >
-        <SearchIcon isHomeClicked={iconState.search} />
+        <SearchIcon isSearchClicked={iconState.search} />
         <span className={`icon-text ${iconState.search ? "bold-text" : ""}`}>
           SearchIcon
         </span>
@@ -67,7 +67,7 @@ const NavBarIcons: React.FC<NavBarIconsProps> = ({ className }) => {
         className={`navbar-icons-text ${iconState.explore ? "active" : ""}`}
         onClick={() => handleIconClick("explore")}
       >
-        <CompassIcon isHomeClicked={iconState.explore} />
+        <CompassIcon isCompassClicked={iconState.explore} />
         <span className={`icon-text ${iconState.explore ? "bold-text" : ""}`}>
           Explore
         </span>
