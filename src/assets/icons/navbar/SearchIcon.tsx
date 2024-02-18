@@ -5,12 +5,8 @@ interface SearchIconProps {
 }
 
 export const SearchIcon: React.FC<SearchIconProps> = ({ isSearchClicked }) => {
-  const handleHome = () => {
-    // Additional logic for updating likes count on the backend
-  };
-
   return (
-    <span className="heart-icon" onClick={handleHome}>
+    <span className="heart-icon">
       {isSearchClicked ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"

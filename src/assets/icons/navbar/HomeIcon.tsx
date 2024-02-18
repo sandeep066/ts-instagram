@@ -5,12 +5,8 @@ interface HomeIconProps {
 }
 
 export const HomeIcon: React.FC<HomeIconProps> = ({ isHomeClicked }) => {
-  const handleHome = () => {
-    // Additional logic for updating likes count on the backend
-  };
-
   return (
-    <span className="heart-icon" onClick={handleHome}>
+    <span className="heart-icon">
       {isHomeClicked ? (
         // Icon when home is clicked
         <svg
