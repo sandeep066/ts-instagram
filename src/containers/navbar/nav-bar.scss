@@ -1,5 +1,8 @@
 .main-navbar {
+  position: fixed;
+  top: 0;
   width: 245px;
-  background-color: brown;
   height: 100vh;
+  border-right: 1px solid lightgray;
+  //background-color: black;
 }
